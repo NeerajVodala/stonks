@@ -32,7 +32,7 @@ function checkProfitOrLoss(initial, curr, qty) {
         output.innerText = "YAY! That's a profit of " + profit + " bucks, your stock is up by " + profitPercent + "%";
 
     } else {
-        output.innerText = "Neither Loss Nor Profit";
+        output.innerText = "Neither Profit Nor Loss";
     }
 
 }
