@@ -11,7 +11,11 @@ function checkStonks() {
     var curr = Number(currentPrice.value);
     var qty = Number(quantity.value);
     if (initial && curr && qty) {
-        checkProfitOrLoss(initial, curr, qty);
+        if (initial > 0 && curr > 0 && qty > 0) {
+            checkProfitOrLoss(initial, curr, qty);
+        } else {
+            output.innerText = "Invalid values";
+        }
     } else {
         output.innerText = "Please Enter all the values";
     }
